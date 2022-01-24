@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Home</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.min.css">
+    <!--Glide-->
+    <link rel="stylesheet" href="./libraries/glide/css/glide.core.min.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" type="text/css" href="./libraries/fontawesome/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+        body {
+           background-color: 666666;
+           font-family: 'Poppins', sans-serif;
+           font-size: 18px;
+        }
+
+        .section-login-left {
+            background-color: #AAEAEB; 
+            /* min-height: 100vh; */
+        }
+
+        .section-login-right {
+            background-color: #FFFFFF; 
+            /* height: 100vh; */
+        }
+
+        .back {
+            font-size: 18px;
+        }
+
+        .tagline {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-control, .btn{
+            -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                    border-radius: 12px;
+        }
+
+        .btn-custom {
+            background-color: #FFF !important;
+            color: #009FA3 !important;
+            border: 1px solid #009FA3;
+        }
+        .btn-custom:hover, .btn-custom:active, .btn-custom:visited {
+            background-color: #009FA3 !important;
+            color: #FFFFFF !important;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="section-login-left col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mt-4 ms-5">
+                            <img src="./images/logo/logo-gram-type.png" alt="Logo Gram Type">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-login-right col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="text-end" style="margin:55px 50px 65px 0;">
+                            <a href="#" class="back text-muted">Kembali ke Homepage ></a>
+                        </div>
+                        <h1 class="tagline text-center">Daftar Akun Yourhome</h1>
+                        <div class="col-md-8" >
+                            <div class="mt-4 mb-4 form-group">
+                                <label for="email" class="form-label">Alamat Email</label>
+                                <input type="email" class="form-control" id="email"  placeholder="Masukkan alamat Email">
+                            </div>
+                            <div class="mb-4 form-group">
+                                <label for="name" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name" placeholder="Masukkan Nama">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="exampleInputPassword1" class="d-block">Jenis Kelamin</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenkel" value="Laki-Laki" >
+                                    <label class="form-check-label">Laki-Laki</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenkel"value="Perempuan">
+                                    <label class="form-check-label">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-7">
+                                    <label for="tempat">Tempat, Tanggal Lahir</label>
+                                    <input class="form-control" id="tempat" type="text" placeholder="Masukkan Tempat">
+                                </div>
+                                <div class="col-md-5">
+                                    <label for=""> </label>
+                                    <input class="form-control" id="ex3" type="date" placeholder="" >
+                                </div>
+                            </div>
+                            <div class="mb-4 form-group">
+                                <label for="name" class="form-label">Nomor telepon</label>
+                                <input type="number" min="0" max="100000000" width="50%" class="form-control" id="name" placeholder="Masukkan Nomer telepon">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary text-bold" type="button" style="background-color: #009FA3;">Lanjut</button>
+                            </div>
+                            <p class="text-center mt-3">Sudah Punya Akun <a href="#" style="color: #009FA3;">Login</a> Disini</p>
+                            <p class="text-center text-muted mt-3">------- atau -------</p>
+                            <div class="d-grid mt-3 mb-5">
+                                <button class="btn btn-custom" type="button" ><i class="fab fa-google"></i> Masuk Dengan Google</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Online Section Ends -->
+    <script type="text/javascript" src="./libraries/fontawesome/js/all.js"></script>
+    <!-- Bootstrap -->
+    <script src="./libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libraries/glide/js/glide.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
